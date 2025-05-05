@@ -5,7 +5,7 @@ const password_valid = () => {
     const [errorMessage, setErrorMessage] = useState("")
     const validatePassword = (value) =>{
         if (!validator.isStrongPassword(value, { minLength: 8, minLowercase: 1, minUppercase: 1, minSymbols: 1, minNumbers: 1 })) {
-          console.log("Password is not strong enough");
+        console.log("Password is not strong enough");
           
             setErrorMessage("Password must be at least 8 characters long and include at least 1 lowercase letter, 1 uppercase letter, 1 symbol, and 1 number.");
         } 
